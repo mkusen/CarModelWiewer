@@ -2,6 +2,7 @@
 
 namespace CarModelViewer.Models
 {
+    // create table VehicleModel
     public class VehicleModel
     {
         public int VehicleModelID { get; set; }

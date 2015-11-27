@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 namespace CarModelViewer.Models
 {
+    //create table VehicleMake
     public class VehicleMake
     {
         public int VehicleMakeID { get; set; }
