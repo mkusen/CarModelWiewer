@@ -13,8 +13,9 @@ namespace CarModelViewer.Models
     {
         public List<VehicleMake> GetManufacturer()
         {
+            //get all vehicle manufacturer
             VehicleModelDBContext vehicleModelDBContext = new VehicleModelDBContext();
-            return vehicleModelDBContext.Manufacturers.ToList();
+            return vehicleModelDBContext.Manufacturers.Include("VehicleModel").ToList();
         }
     }
 }
